@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Orbital 2014 Workshop - HTML, CSS, and Git</title>
+
+		<meta name="description" content="Materials for Orbital 2014 Workshop - HTML, CSS, and Git">
+		<meta name="author" content="Ng Zhi An">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+           
+<section>
+<h1 id="css">CSS</h1>
+</section>
+
+<section>
+<h2 id="what-is-css">What is CSS</h2>
+<p>Cascading Style Sheets</p>
+to make HTML look nicer, easier to digest
+</section>
+
+<section>
+<h2 id="css-in-the-wild">CSS in the Wild</h2>
+<p>tweak css values for a website using inspector</p>
+fire up inspector, or <code>C-S-c</code>, click on something, and see the sidebar
+</section>
+
+<section>
+<h2 id="simple-styles">Simple styles</h2>
+or how to bedazzle the audience
+</section>
+
+<section>
+<h3 id="ways-of-defining-css">3 ways of defining css</h3>
+<ol style="list-style-type: decimal">
+<li>inline</li>
+<li><code>&lt;style&gt;</code> tag</li>
+<li>external stylesheet
+</section>
+</li>
+</ol>
+<section>
+<h3 id="background-color"><code>background-color</code></h3>
+<p>most obvious style change</p>
+<pre class="html"><code>&lt;body style=&quot;background-color: #dddddd&quot;&gt;</code></pre>
+</section>
+
+<section>
+<h3 id="we-need-a-logo">we need a logo!</h3>
+<pre class="html"><code>&lt;div&gt;IMPRESSIVE LOGO&lt;/div&gt;</code></pre>
+</section>
+
+<section>
+<h3 id="wrap-it-all-in-a-header-for-convenience">wrap it all in a <code>header</code> for convenience</h3>
+<pre class="html"><code>&lt;header&gt;
+  &lt;!-- logo goes here --&gt;
+  &lt;!-- nav goes here --&gt;
+&lt;/header&gt;</code></pre>
+</section>
+
+<section>
+<h3 id="text-align-center-to-center-logo"><code>text-align: center</code> to center logo</h3>
+<pre class="html"><code>&lt;div style=&quot;text-align: center;&quot;&gt;
+  IMPRESSIVE LOGO
+&lt;/div&gt;</code></pre>
+</section>
+
+<section>
+<h3 id="text-align-center-to-center-navigation-links"><code>text-align: center</code> to center navigation links</h3>
+<pre class="html"><code>&lt;ul style=&quot;text-align: center&quot;&gt;</code></pre>
+</section>
+
+<section>
+<h3 id="urgh-bullet-points">urgh, bullet points</h3>
+<pre class="html"><code>&lt;ul style=&quot;text-align: center; list-style-type: none;&quot;&gt;</code></pre>
+</section>
+
+<section>
+<h3 id="side-by-side-links">side-by-side links</h3>
+<pre class="html"><code>&lt;li style=&quot;display: inline-block;&quot;&gt; &lt;a href=&quot;#details&quot;&gt;Details&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;display: inline-block;&quot;&gt; &lt;a href=&quot;#installation&quot;&gt;Installation&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot;display: inline-block;&quot;&gt; &lt;a href=&quot;#creators&quot;&gt;Creators&lt;/a&gt; &lt;/li&gt;</code></pre>
+</section>
+
+<section>
+<section>
+<h2 id="style-tags-and-selectors">Style tags and selectors</h2>
+</section>
+
+<section>
+<h3 id="create-style-tag-in-head">create <code>style</code> tag in <code>head</code></h3>
+<pre class="html"><code>&lt;!-- in head --&gt;
+&lt;style&gt;
+&lt;/style&gt;</code></pre>
+</section>
+
+<section>
+<h3 id="body-to-select-html-tags"><code>body</code> to select html tags</h3>
+<pre class="html"><code>body {
+  background-color: #dddddd;
+}</code></pre>
+</section>
+
+<section>
+<h3 id="class-to-select-class"><code>.class</code> to select class</h3>
+<pre class="html"><code>.logo {
+  color: #90a150
+}</code></pre>
+</section>
+
+<section>
+<h3 id="ul-to-style-lists"><code>ul</code> to style lists</h3>
+<pre class="html"><code>ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-left: 1em;
+}</code></pre>
+yucks!
+</section>
+
+<section>
+<h3 id="use-nav-ul-selector-to-be-more-precise-or-give-a-class-to-the-nav">use <code>nav ul</code> selector to be more precise, or give a <code>class</code> to the nav</h3>
+<pre class="html"><code>nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+}</code></pre>
+</section>
+
+<section>
+<h3 id="float-box-model-clearing">float, box model, clearing</h3>
+<p>we want logo to be beside the links, use <code>float</code> to ask browser to squeeze them on the same line</p>
+<pre class="html"><code>.logo {
+  float: left;
+  font-size: 3em;
+}
+
+nav ul {
+  float: right;
+  list-style-type: none;
+}</code></pre>
+</section>
+
+<section>
+<h3 id="messed-up-layout">messed up layout</h3>
+<p>use a <code>clear: both</code> on <code>div.content</code> to clear it away</p>
+<pre class="html"><code>.content {
+  clear: both;
+}</code></pre>
+</section>
+
+<section>
+<h3 id="margin">margin</h3>
+<p>our links seem to be too close together, use <code>margin-left</code> to give it space</p>
+<pre class="html"><code>nav ul li {
+  display: inline-block;
+  margin-left: 1em;
+}</code></pre>
+</section>
+
+<section>
+<h3 id="padding">padding</h3>
+<p>our content looks like they are too close to the edges of the page</p>
+<p>wrap everything in a <code>div.container</code>, set <code>padding-top: 3em</code></p>
+<pre class="html"><code>.container {
+  padding-top: 3em;
+}</code></pre>
+</section>
+
+<section>
+<h3 id="fonts">fonts</h3>
+<p>make impressive logo bigger using <code>font-size</code></p>
+<pre class="html"><code>.logo {
+  color: #90a150;
+  float: left;
+  font-size: 3em;
+}</code></pre>
+<code>text-align</code> has no more use now that it's floated, remove it
+</section>
+
+<section>
+<h3 id="shorthands-for-font">shorthands for <code>font</code></h3>
+<pre class="html"><code>nav ul {
+  float: right;
+  list-style-type: none;
+  font-size: 1.3em;
+  font: 1.3em sans-serif;
+}</code></pre>
+</section>
+
+<section>
+<h3 id="centering-everything">centering everything</h3>
+<p>set a <code>width</code> for <code>.container</code> or a <code>max-width</code></p>
+<pre class="html"><code>.container {
+  margin: 0px auto;
+  max-width: 760px;
+  padding-top: 3em;
+}</code></pre>
+</section>
+
+<section>
+<h3 id="pseudo-selectors">Pseudo selectors</h3>
+<p>introducing <code>a:link</code>, <code>a:hover</code>, <code>a:visited</code></p>
+<pre class="html"><code>a:link {
+  color: #839e24;
+  text-decoration: none;
+  border-bottom: 0.14em dotted #839e24;
+}
+
+a:hover {
+  color: #303030;
+  background: #b1d641;
+  border-bottom: none;
+}</code></pre>
+there's a lot more, such as <code>n-th child</code>, explore on your own
+</section>
+</section>
+
+<section>
+<h2 id="references">References</h2>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Detailed reference on all CSS properties</a>
+</section>
+
+
+
+
+            </div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: 'simple', // available themes are in /css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
