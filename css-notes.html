@@ -1,0 +1,143 @@
+<h1 id="css">CSS</h1>
+<h2 id="what-is-css">What is CSS</h2>
+<ul>
+<li>Cascading Style Sheets</li>
+<li>to make HTML look nicer, easier to digest</li>
+</ul>
+<h2 id="css-in-the-wild">CSS in the Wild</h2>
+<ul>
+<li>tweaking css values for a website using inspector</li>
+<li>fire up inspector, or <code>Control-Shift-C</code>, click on something, and see the sidebar</li>
+</ul>
+<h2 id="simple-styles">Simple styles</h2>
+<ul>
+<li>3 ways of defining css,</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>inline</li>
+<li><code>&lt;style&gt;</code> tag</li>
+<li>external stylesheet</li>
+</ol>
+<ul>
+<li><p>most obvious style change is the <code>background-color</code></p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;body</span><span class="ot"> style=</span><span class="st">&quot;background-color: #dddddd&quot;</span><span class="kw">&gt;</span></code></pre></li>
+<li><p>what's missing is a logo</p>
+<pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;div&gt;</span>IMPRESSIVE LOGO<span class="kw">&lt;/div&gt;</span></code></pre></li>
+<li><p>wrap it all in a <code>header for convenience</code></p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;header&gt;</span>
+  <span class="co">&lt;!-- logo goes here --&gt;</span>
+  <span class="co">&lt;!-- nav goes here --&gt;</span>
+<span class="kw">&lt;/header&gt;</span></code></pre></li>
+<li><p>use <code>text-align: center</code> to center logo</p>
+<pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;div</span><span class="ot"> style=</span><span class="st">&quot;text-align: center;&quot;</span><span class="kw">&gt;</span>
+    IMPRESSIVE LOGO
+  <span class="kw">&lt;/div&gt;</span></code></pre></li>
+<li><p>use <code>text-align: center</code> to center navigation links</p>
+<pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;ul</span><span class="ot"> style=</span><span class="st">&quot;text-align: center&quot;</span><span class="kw">&gt;</span></code></pre></li>
+<li><p>use <code>list-style-type: none</code> to remove bullet points</p>
+<pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;ul</span><span class="ot"> style=</span><span class="st">&quot;text-align: center; list-style-type: none;&quot;</span><span class="kw">&gt;</span></code></pre></li>
+<li><p>we want our links to be side by side, use <code>display: inline-block</code> on all the <code>&lt;li&gt;</code></p>
+<pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;li</span><span class="ot"> style=</span><span class="st">&quot;display: inline-block;&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#details&quot;</span><span class="kw">&gt;</span>Details<span class="kw">&lt;/a&gt;</span> <span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li</span><span class="ot"> style=</span><span class="st">&quot;display: inline-block;&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#installation&quot;</span><span class="kw">&gt;</span>Installation<span class="kw">&lt;/a&gt;</span> <span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li</span><span class="ot"> style=</span><span class="st">&quot;display: inline-block;&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#creators&quot;</span><span class="kw">&gt;</span>Creators<span class="kw">&lt;/a&gt;</span> <span class="kw">&lt;/li&gt;</span></code></pre></li>
+<li><p>this is really troublesome, introduce <code>&lt;style&gt;</code> and css selectors</p></li>
+</ul>
+<h2 id="style-tags">Style tags</h2>
+<h3 id="selectors">Selectors</h3>
+<ul>
+<li><p>create <code>style</code> tag in <code>head</code></p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- in head --&gt;</span>
+<span class="kw">&lt;style&gt;</span>
+<span class="kw">&lt;/style&gt;</span></code></pre></li>
+<li><p>plain <code>body</code> to select html tags</p>
+<pre class="sourceCode html"><code class="sourceCode html">  body {
+    background-color: #dddddd;
+  }</code></pre></li>
+<li><p><code>.logo</code> to select class</p>
+<pre class="sourceCode html"><code class="sourceCode html">  .logo {
+    color: #90a150
+  }</code></pre></li>
+<li><p><code>ul</code> to style lists</p>
+<pre class="sourceCode html"><code class="sourceCode html">  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin-left: 1em;
+  }</code></pre></li>
+<li>notice that it affected the other list that we didn't want to touch</li>
+<li><p>use <code>nav ul</code> selector to be more precise, or give a <code>class</code> to the nav</p>
+<pre class="sourceCode html"><code class="sourceCode html">  nav ul {
+    list-style-type: none;
+  }
+  nav ul li {
+    display: inline-block;
+  }</code></pre>
+<h3>Float, box model, clearing</h3></li>
+<li>we want logo to be beside the links, use float</li>
+<li>using float to ask browser to squeeze them on the same line</li>
+<li><p><code>float: left</code> for both <code>.logo</code> and <code>nav ul</code></p>
+<pre class="sourceCode html"><code class="sourceCode html">  .logo {
+    float: left;
+    font-size: 3em;
+  }
+  nav ul {
+    float: right;
+    list-style-type: none;
+  }</code></pre></li>
+<li>notice that our <code>h1</code> is now squeezed on top too, because there is space</li>
+<li><p>use a <code>clear: both</code> on <code>div.content</code> to clear it away</p>
+<pre class="sourceCode html"><code class="sourceCode html">  .content {
+    clear: both;
+  }</code></pre>
+<h3>Margins and padding</h3></li>
+<li><p>our links seem to be too close together, use <code>margin-left</code> to give it space</p>
+<pre class="sourceCode html"><code class="sourceCode html">  nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+  }</code></pre></li>
+<li>our content looks like they are too close to the edges of the page</li>
+<li><p>wrap everything in a <code>div.container</code>, set <code>padding-top: 3em</code></p>
+<pre class="sourceCode html"><code class="sourceCode html">  .container {
+    padding-top: 3em;
+  }</code></pre>
+<h3>Fonts</h3></li>
+<li><p>make impressive logo bigger using <code>font-size</code></p>
+<pre class="sourceCode html"><code class="sourceCode html">  .logo {
+    color: #90a150;
+    float: left;
+    font-size: 3em;
+  }</code></pre></li>
+<li><code>text-align</code> has no more use now that it's floated, remove it</li>
+<li><p>introduce <code>font</code> as a shorthand</p>
+<pre class="sourceCode html"><code class="sourceCode html">  nav ul {
+    float: right;
+    list-style-type: none;
+    font-size: 1.3em;
+    font: 1.3em sans-serif;
+  }</code></pre>
+<h3>Centering everything</h3></li>
+<li><p>set a <code>width</code> for <code>.container</code> or a <code>max-width</code></p>
+<pre class="sourceCode html"><code class="sourceCode html">  .container {
+    margin: 0px auto;
+    max-width: 760px;
+    padding-top: 3em;
+  }</code></pre>
+<h3>Pseudo selectors</h3></li>
+<li><p>introduce <code>a:link</code>, <code>a:hover</code>, <code>a:visited</code> etc</p>
+<pre class="sourceCode html"><code class="sourceCode html">  a:link {
+    color: #839e24;
+    text-decoration: none;
+    border-bottom: 0.14em dotted #839e24;
+  }
+  a:hover {
+    color: #303030;
+    background: #b1d641;
+    border-bottom: none;
+  }</code></pre></li>
+<li><p>there's a lot more, such as <code>n-th child</code>, explore on your own</p></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Detailed reference on all CSS properties</a></li>
+</ul>

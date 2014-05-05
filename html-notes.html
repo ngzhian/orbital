@@ -1,0 +1,161 @@
+<h1 id="html">HTML</h1>
+<h2 id="what-is-html">What is HTML</h2>
+<ul>
+<li><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</li>
+<li>large part of what the web is</li>
+<li>you use your <em>browser</em>, which speaks <em>HTTP</em> to the <em>Servers</em> on the <em>Internet</em> to see webpages</li>
+</ul>
+<h2 id="html-in-the-wild">HTML in the wild</h2>
+<ul>
+<li>check the source of a webpage, maybe <a href="www.comp.nus.edu.sg">NUS Computing</a></li>
+<li>on Firefox, right click on the web page and select <code>View Page Source</code> or <code>Ctrl-Shift-I</code></li>
+<li>Use <strong>inspect element</strong> or <code>Ctrl-Shift-C</code> to select and jump to an element</li>
+<li>you can copy HTML from any website</li>
+</ul>
+<h2 id="simplest-html-page">Simplest html page</h2>
+<ul>
+<li><p>make a super simple html page, <code>index.html</code> which doesn't have tags</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- index.html --&gt;</span>
+Orbital wohoo!</code></pre></li>
+<li>HTML is just plain text</li>
+<li><p>this is incomplete and incorrect, but your browser tries to display it anyway</p></li>
+</ul>
+<h2 id="html-and-tags">HTML and tags</h2>
+<ul>
+<li><p>using Sublime Text, just type <code>html</code> and press <code>Tab</code> to see a barebones HTML structure</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- index.html --&gt;</span>
+<span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>
+    <span class="kw">&lt;/title&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+  <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre></li>
+<li><code>&lt;!DOCTYPE htmL&gt;</code> requierd for legacy reasons to help browser in rendering</li>
+<li><code>&lt;html&gt;</code> tag defines that this is a html page</li>
+<li><code>&lt;title&gt;</code> title of webpage, shown in search results and browser tab</li>
+<li><code>&lt;head&gt;</code> not seen by users, mainly for computers, e.g. search engine crawlers</li>
+<li><p><code>&lt;body&gt;</code> what is seen by us, the user</p></li>
+</ul>
+<h2 id="our-project-page">Our project page</h2>
+<ul>
+<li>whatever project you end up doing, you will probably want to build a a website to showcase it, let's use that as a starting point</li>
+<li><p>enter a <code>title</code> for the webpage</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;title&gt;</span>
+  Orbital Project Name - Home
+<span class="kw">&lt;/title&gt;</span></code></pre></li>
+<li><p>headers from <code>h1</code> to <code>h6</code> for varying importance</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- after &lt;body&gt; --&gt;</span>
+<span class="kw">&lt;h1&gt;</span>
+  Project Name
+<span class="kw">&lt;/h1&gt;</span></code></pre></li>
+<li><p><code>p</code> stands for paragraph, logical unit of text</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- after &lt;/h1&gt; --&gt;</span>
+<span class="kw">&lt;p&gt;</span>
+  Awesomeeeee subtitle!
+<span class="kw">&lt;/p&gt;</span></code></pre></li>
+<li><p><code>div</code> is the generic container</p>
+<pre class="sourceCode html"><code class="sourceCode html"> <span class="co">&lt;!-- after &lt;/p&gt; --&gt;</span>
+ <span class="kw">&lt;div&gt;</span>
+   <span class="kw">&lt;h2&gt;</span> Installation <span class="kw">&lt;/h2&gt;</span>
+   <span class="kw">&lt;p&gt;</span> download this project and open it in your browser <span class="kw">&lt;/p&gt;</span>
+ <span class="kw">&lt;/div&gt;</span>
+ <span class="kw">&lt;div&gt;</span>
+   <span class="kw">&lt;h2&gt;</span> Creators <span class="kw">&lt;/h2&gt;</span>
+   <span class="kw">&lt;p&gt;</span> 2 wonderful students from NUS created this <span class="kw">&lt;/p&gt;</span>
+   <span class="kw">&lt;p&gt;</span> Me, You <span class="kw">&lt;/p&gt;</span>
+ <span class="kw">&lt;/div&gt;</span></code></pre></li>
+<li><p>HTML ignores whitespace</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- under Creators --&gt;</span>
+<span class="kw">&lt;p&gt;</span> Me,
+You
+<span class="kw">&lt;/p&gt;</span></code></pre></li>
+<li><p>we can use <code>br</code> to for it, but we usually don't cos there are better ways</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- under Creators --&gt;</span>
+<span class="kw">&lt;p&gt;</span> Me,<span class="kw">&lt;br&gt;</span>
+You
+<span class="kw">&lt;/p&gt;</span></code></pre></li>
+<li><p>enter a <code>em</code> for emphasis</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- under Details --&gt;</span>
+<span class="kw">&lt;p&gt;</span> It will win <span class="kw">&lt;em&gt;</span>best project<span class="kw">&lt;/em&gt;</span>! <span class="kw">&lt;p&gt;</span></code></pre></li>
+<li><p>enter a <code>strong</code> for stronger emphasis</p>
+<pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;p&gt;</span> 2 <span class="kw">&lt;strong&gt;</span>wonderful<span class="kw">&lt;/strong&gt;</span> students from NUS created this <span class="kw">&lt;/p&gt;</span></code></pre></li>
+<li><p>enter a <code>nav</code> for navigation links, nav is essentially like div but it gives more meaning, saying that &quot;here be links&quot;</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;nav&gt;</span>
+<span class="kw">&lt;/nav&gt;</span>
+<span class="co">&lt;!-- before Details --&gt;</span></code></pre></li>
+<li><p>a navigation menu is really just a list of links, and we can specify a list using <code>ul</code> or an unordered list</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- after nav --&gt;</span>
+<span class="kw">&lt;ul&gt;</span>
+<span class="kw">&lt;/ul&gt;</span></code></pre></li>
+<li><p>enter a <code>li</code> for a list element inside a list</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul&gt;</span>
+  <span class="kw">&lt;li&gt;</span> Details <span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span> Installation <span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span> Creators <span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;/ul&gt;</span></code></pre></li>
+<li><p>enter a <code>a</code> with <code>href</code> to to make links note the difference in styling of links, blue underline</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul&gt;</span>
+  <span class="kw">&lt;li&gt;</span> <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#details&quot;</span><span class="kw">&gt;</span>Details<span class="kw">&lt;/a&gt;</span> <span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span> <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#installation&quot;</span><span class="kw">&gt;</span>Installation<span class="kw">&lt;/a&gt;</span> <span class="kw">&lt;/li&gt;</span>
+  <span class="kw">&lt;li&gt;</span> <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#creators&quot;</span><span class="kw">&gt;</span>Creators<span class="kw">&lt;/a&gt;</span> <span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;/ul&gt;</span></code></pre></li>
+<li>the <code>#</code> essentially means, look for something with an id <code>details</code> and jump there</li>
+<li><p>to sepcify an <code>id</code> attribute for <code>div</code></p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;details&quot;</span><span class="kw">&gt;</span>
+<span class="co">&lt;!-- cut --&gt;</span>
+<span class="kw">&lt;div</span><span class="ot"> id</span> <span class="ot">=</span><span class="st">&quot;installation&quot;</span><span class="kw">&gt;</span>
+<span class="co">&lt;!-- cut --&gt;</span>
+<span class="kw">&lt;div</span><span class="ot"> id</span> <span class="ot">=</span><span class="st">&quot;creators&quot;</span><span class="kw">&gt;</span></code></pre></li>
+<li><p>enter a <code>img</code> with <code>src</code> attribute for a screenshot of your project</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- before nav --&gt;</span></code></pre></li>
+<li><p>enter a <code>form</code> with <code>input</code>, <code>submit</code></p>
+<pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;feedback&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;form&gt;</span>
+      <span class="kw">&lt;input</span><span class="ot"> name=</span><span class="st">&quot;q&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/form&gt;</span>
+  <span class="kw">&lt;/div&gt;</span></code></pre></li>
+<li>nothing happens when we click submit, so lets change that</li>
+<li><p>try submitting query to google search first, then submit query to own page, this will be implemented later during GAE</p>
+<pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;feedback&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;form</span><span class="ot"> action=</span><span class="st">&quot;www.google.com/search&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;input</span><span class="ot"> name=</span><span class="st">&quot;q&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/form&gt;</span>
+  <span class="kw">&lt;/div&gt;</span></code></pre></li>
+<li>make this into a useful feedback form for our page</li>
+<li><p>use <code>label</code> to tell the user what the field is for</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;form</span><span class="ot"> action=</span><span class="st">&quot;shout&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;label&gt;</span>
+    Email:
+    <span class="kw">&lt;input</span><span class="ot"> name=</span><span class="st">&quot;email&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;/label&gt;</span>
+  <span class="kw">&lt;label&gt;</span>
+    Comments:
+    <span class="kw">&lt;textarea</span><span class="ot"> required name=</span><span class="st">&quot;comments&quot;</span><span class="ot"> rows=</span><span class="st">&quot;10&quot;</span><span class="ot"> cols=</span><span class="st">&quot;50&quot;</span><span class="ot"> placeholder=</span><span class="st">&quot;What do you think?&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/textarea&gt;</span>
+  <span class="kw">&lt;/label&gt;</span>
+  <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="ot"> value=</span><span class="st">&quot;Send&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;/form&gt;</span></code></pre></li>
+<li><p>use <code>placeholder</code> instead of label</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;form</span><span class="ot"> action=</span><span class="st">&quot;shout&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;p&gt;</span>
+    <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;email&quot;</span><span class="ot"> name=</span><span class="st">&quot;email&quot;</span><span class="ot"> placeholder=</span><span class="st">&quot;Email&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;/p&gt;</span>
+  <span class="kw">&lt;p&gt;</span>
+    <span class="kw">&lt;textarea</span><span class="ot"> required name=</span><span class="st">&quot;comments&quot;</span><span class="ot"> rows=</span><span class="st">&quot;10&quot;</span><span class="ot"> cols=</span><span class="st">&quot;50&quot;</span><span class="ot"> placeholder=</span><span class="st">&quot;What do you think?&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/textarea&gt;</span>
+  <span class="kw">&lt;/p&gt;</span>
+  <span class="kw">&lt;p&gt;</span>
+    <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="ot"> value=</span><span class="st">&quot;Send&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;/form&gt;</span></code></pre></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML element reference</a></li>
+<li><a href="www.html5rocks.com/en/tutorials/forms/html5forms/">Tutorial on HTML5 forms</a></li>
+</ul>
