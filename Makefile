@@ -1,6 +1,8 @@
 SUB=<!--REPLACE-->
 TMPL=template.html
 
+all: clean pandoc template
+
 # use pandoc to convert md to html files
 # turn off highlight for code since it conflicts with reveal.js
 pandoc: README.md html-notes.md css-notes.md
@@ -9,6 +11,9 @@ pandoc: README.md html-notes.md css-notes.md
 	pandoc css-notes.md -o css-notes.html --no-highlight
 	pandoc resources.md -o resources.html --no-highlight
 
+# get contents from our notes html file into the template file
+# the template file contains boiler plate for the slide
+# so each resulting html is itself a reveal.js slide
 template: html-notes.html css-notes.html
 	sed -e '/$(SUB)/r README.html'      -e '/$(SUB)/d' $(TMPL) > index.html
 	sed -e '/$(SUB)/r html-notes.html' -e '/$(SUB)/d' $(TMPL) > html-slides.html
@@ -19,7 +24,6 @@ template: html-notes.html css-notes.html
 	rm -rf css-notes.html
 	rm -rf resources.html
 
-all: pandoc template
 
 .PHONY: clean
 

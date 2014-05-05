@@ -17,7 +17,7 @@ on the *Internet* to see webpages
 <section>
 HTML in the wild
 ----------------
-check the source of a webpage, maybe [NUS Computing](www.comp.nus.edu.sg)
+check the source of a webpage, maybe [NUS Computing](http://www.comp.nus.edu.sg)
 
 on Firefox, right click on the web page and select `View Page Source`
 or `Ctrl-Shift-I`
@@ -290,6 +290,6 @@ References
 ----------
 [HTML element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-[Tutorial on HTML5 forms](www.html5rocks.com/en/tutorials/forms/html5forms/)
+[Tutorial on HTML5 forms](http://www.html5rocks.com/en/tutorials/forms/html5forms/)
 </section>
 
