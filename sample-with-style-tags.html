@@ -35,6 +35,19 @@ nav ul li {
   display: inline-block;
   margin-left: 1em;
 }
+
+a:link {
+  color: #839e24;
+  text-decoration: none;
+  border-bottom: 0.14em dotted #839e24;
+}
+
+a:hover {
+  color: #303030;
+  background: #b1d641;
+  border-bottom: none;
+}
+
 </style>
 </head>
 
@@ -72,18 +85,33 @@ nav ul li {
       <p> It won <em>best project</em> </p>
     </div>
 
-    <div id ="installation">
+    <div id="installation">
       <h2> Installation </h2>
       <p> download this project and open it in your browser </p>
     </div>
 
-    <div id ="creators">
+    <div id="creators">
       <h2> Creators </h2>
       <p> 2 <strong>wonderful</strong> students from NUS created this </p>
       <ul>
         <li> Me </li>
         <li> You </li>
       </ul>
+    </div>
+
+    <div id="feedback">
+      <form action="shout">
+        <p>
+        <input type="email" name="email" placeholder="Email">
+        </p>
+        <p>
+        <textarea required name="comments" rows="10" cols="50" placeholder="What do you think?">
+        </textarea>
+        </p>
+        <p>
+        <input type="submit" value="Send">
+        </p>
+      </form>
     </div>
   </div>
 </div>

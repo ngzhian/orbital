@@ -49,16 +49,19 @@ Our project page
     see the difference in styling of links, blue underline
 - enter a `id` attribute for `div` to make links work
 - enter a `img` with `src` attribute for a screenshot of your project
+- enter a `form` with `input.email`, `input.comments`,`submit`
+- demo submitting query to google search first, then submit query to 
+    own page, this will be implemented later during GAE
+- use `label` to tell the user what the field is for
+- use `placeholder` instead of label
+
+References
+----------
+- [HTML element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+- [Tutorial on HTML5 forms](www.html5rocks.com/en/tutorials/forms/html5forms/)
 
 CSS
 ===
-some inspiration
-- www.aquatilis.tv
-- www.awwwards.com/winner-list/
-- wwwaleeforoughi.com
-- wagerfield.github.io/parallax
-- yourpower.panda.org
-- flatvsrealism.com
 
 What is CSS
 -----------
@@ -109,16 +112,30 @@ Style tags
 ### Centering everything
 - set a `width` for `.container` or a `max-width`
 - try to center logo, face problem, detour to explain a little about Box Model
-- set `width` for `.logo`, set `margin` to `auto`
+### Pseudo selectors
+- introduce `a:link`, `a:hover`, `a:visited` etc
+- there's a lot more, such as `n-th child`, explore on your own
 
+References
+----------
+- [Detailed reference on all CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 Resources
----------
-- flukeout.github.io
-- developer.mozilla.org
-- www.webplatform.org
-- www.html5rocks.com
-- www.w3schools.com
-- html5up
-- tympanus.net/codrops
-- smashingmagazine
+=========
+- [Play a game an learn CSS Selectors](flukeout.github.io)
+- [Reference for all things Web](developer.mozilla.org)
+- [Another reference for Web](www.webplatform.org)
+- [Guides, Tutorials, and News about HTML5](www.html5rocks.com)
+- [Old school learning resource for Web tech](www.w3schools.com)
+- [Pretty templates you can steal and learn from](www.html5up.com)
+- [Regular news and featuers on Web, esp design](tympanus.net/codrops)
+- [News, guides, tutorials on Design for Web](smashingmagazine)
+
+Inspiration
+===========
+- [www.aquatilis.tv](www.aquatilis.tv)
+- [www.awwwards.com/winner-list/](www.awwwards.com/winner-list/)
+- [wwwaleeforoughi.com](wwwaleeforoughi.com)
+- [wagerfield.github.io/parallax](wagerfield.github.io/parallax)
+- [yourpower.panda.org](yourpower.panda.org)
+- [flatvsrealism.com](flatvsrealism.com)
