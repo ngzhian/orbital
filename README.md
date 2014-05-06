@@ -6,13 +6,21 @@ All notes, learning points, resources, sample webpages are here.
 </section>
 
 <section>
+<section>
 Setup
 -----
-[Modern Web Browser- Firefox](http://www.firefox.com)
+1. Get a modern Web Browser - [Firefox](http://www.firefox.com) 
+or [Chrome](http://www.google.com/chrome)
+2. Install a good code editor - [Sublime Text](http://www.sublimetext.com)
+or [Vim](http://www.vim.org) (my fav!)
+3. Get [Git](http://git-scm.com/) for your platform.
+(For Windows users only, install [GitPad](https://github.com/github/GitPad))
 
-[Great code editor - Sublime Text](http://www.sublimetext.com)
-or
-[My fav editor - Vim](http://www.vim.org)
+</section>
+<section>
+Try running them and make sure they work!
+-----------------------------------------
+</section>
 </section>
 
 <section>
@@ -25,6 +33,12 @@ CSS
 ----
 [Slides](./css-slides.html)
 [Notes](./css-notes.md)
+
+Git
+---
+[Slides](./git-slides.html)
+[Notes](./git-notes.md)
+
 </section>
 
 <section>
