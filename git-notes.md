@@ -116,6 +116,8 @@ References
 
 [Git Reference Manual](http://git-scm.com/doc)
 
+[GitHub's Hello World Guide to GitHub](https://guides.github.com/activities/hello-world/)
+
 [Try Git online](http://try.github.com)
 
 [Inner workings of Git](http://eagain.net/articles/git-for-computer-scientists/)
