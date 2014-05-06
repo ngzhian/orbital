@@ -6,7 +6,6 @@ All notes, learning points, resources, sample webpages are here.
 </section>
 
 <section>
-<section>
 Setup
 -----
 1. Get a modern Web Browser - [Firefox](http://www.firefox.com)
@@ -16,12 +15,9 @@ or [Vim](http://www.vim.org) (my fav!)
 3. Get [Git](http://git-scm.com/) for your platform.
 (For Windows users only, install [GitPad](https://github.com/github/GitPad))
 4. Make a [GitHub](https://www.github.com) account
-</section>
 
-<section>
 Try running them and make sure they work!
------------------------------------------
-</section>
+[Email me](mailto:ngzhian@nus.edu.sg) if you face any problems.
 </section>
 
 <section>
