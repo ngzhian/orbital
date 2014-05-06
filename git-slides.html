@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Orbital 2014 Workshop - HTML, CSS, and Git</title>
+
+		<meta name="description" content="Materials for Orbital 2014 Workshop - HTML, CSS, and Git">
+		<meta name="author" content="Ng Zhi An">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+           
+<section>
+<h1 id="git">Git</h1>
+Distributed version control system
+</section>
+
+<section>
+<h2 id="huh">Huh?</h2>
+Software to keep track of your files, originally for code
+</section>
+
+<section>
+<h2 id="configuration">Configuration</h2>
+<p>Tell git who you are</p>
+<pre class="bash"><code>git config --global user.name &quot;your name&quot;
+git config --global user.email &quot;your email&quot;</code></pre>
+<p>For Mac only</p>
+<pre class="bash"><code>git config --global core.editor &quot;open -t -W&quot;</code></pre>
+</section>
+
+<section>
+<h2 id="initialize-git-repository">Initialize Git repository</h2>
+<pre class="bash"><code>git init</code></pre>
+</section>
+
+<section>
+<h2 id="checking-the-status">Checking the status</h2>
+<pre class="bash"><code>git status</code></pre>
+</section>
+
+<section>
+<h2 id="adding-files-to-be-tracked">Adding files to be tracked</h2>
+<pre class="bash"><code>git add .</code></pre>
+</section>
+
+<section>
+<h2 id="ignoring-files">Ignoring files</h2>
+<pre class="bash"><code>touch .gitignore</code></pre>
+</section>
+
+<section>
+<h2 id="commit-files">Commit files</h2>
+<pre class="bash"><code>git commit</code></pre>
+</section>
+
+<section>
+<h2 id="git-flow">Git flow</h2>
+<pre class="bash"><code>git status
+git add .
+git status
+git commit
+git status</code></pre>
+</section>
+
+<section>
+<h2 id="commit-messages">Commit messages</h2>
+<ul>
+<li>Meaningful</li>
+<li>Describe changes made to code
+</section>
+</li>
+</ul>
+<section>
+<h2 id="see-the-history">See the history</h2>
+<pre class="bash"><code>git log</code></pre>
+</section>
+
+<section>
+<h2 id="see-the-differences">See the differences</h2>
+<pre class="bash"><code>git diff</code></pre>
+</section>
+
+<section>
+<h2 id="collaborate">Collaborate</h2>
+<pre class="bash"><code>git clone
+git push</code></pre>
+</section>
+
+<section>
+<h2 id="references">References</h2>
+<p><a href="https://github.com/nushackers/git-for-beginners">Git for Beginners workshop by NUS Hackers</a></p>
+<p><a href="http://git-scm.com/doc">Git Reference Manual</a></p>
+<p><a href="http://try.github.com">Try Git online</a></p>
+<a href="http://eagain.net/articles/git-for-computer-scientists/">Inner workings of Git</a>
+</section>
+
+
+
+
+            </div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
