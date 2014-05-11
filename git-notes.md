@@ -14,13 +14,13 @@ Software to keep track of your files, originally for code
 Configuration
 -------------
 Tell git who you are
-``` bash
+```
 git config --global user.name "your name"
 git config --global user.email "your email"
 ```
 
 For Mac only
-``` bash
+```
 git config --global core.editor "open -t -W"
 ```
 </section>
@@ -28,52 +28,60 @@ git config --global core.editor "open -t -W"
 <section>
 Initialize Git repository
 -------------------------
-``` bash
-git init
+- Windows: Fire up `Git Bash`
+- Mac/Linux: `Terminal`
+
+```
+$ git init
+Initialized empty Git repository in ...
 ```
 </section>
 
 <section>
 Checking the status
 -------------------
-``` bash
-git status
+```
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
 ```
 </section>
 
 <section>
 Adding files to be tracked
 --------------------------
-``` bash
-git add .
+```
+$ git add .
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   asdf
 ```
 </section>
 
 <section>
 Ignoring files
 --------------
-``` bash
-touch .gitignore
+A file that tells `git` what files/globs to ignore
+```
+$ touch .gitignore
 ```
 </section>
 
 <section>
 Commit files
 ------------
-``` bash
-git commit
 ```
-</section>
-
-<section>
-Git flow
---------
-``` bash
-git status
-git add .
-git status
-git commit
-git status
+$ git commit
+# editor pops up
 ```
 </section>
 
@@ -85,27 +93,59 @@ Commit messages
 </section>
 
 <section>
+Bad commit messages
+-------------------
+- Ooops!
+- asdfasdfasdfasdfasdfasf
+- It works!
+[more @ whatthecommmit.com](http://whatthecommit.com/)
+</section>
+
+<section>
+Good commit messages
+--------------------
+- Fix #113, software hangs when spacebar is pressed
+- Move images to separate folder
+- Separate test source from program source
+</section>
+
+<section>
 See the history
 ---------------
-``` bash
-git log
+```
+$ git log
+$ git log --oneline
 ```
 </section>
 
 <section>
 See the differences
 -------------------
-``` bash
-git diff
 ```
+$ git diff HEAD^
+```
+</section>
+
+<section>
+Git flow
+--------
+```
+$ git status
+$ git add .
+$ git status
+$ git commit
+$ git status
+```
+
+We will get some practice when integrating Bootstrap
 </section>
 
 <section>
 Collaborate
 -----------
-``` bash
-git clone
-git push
+```
+$ git clone
+$ git push
 ```
 </section>
 
