@@ -95,18 +95,23 @@ Commit messages
 <section>
 Bad commit messages
 -------------------
-- Ooops!
-- asdfasdfasdfasdfasdfasf
-- It works!
+```
+Ooops!
+asdfasdfasdfasdfasdfasf
+It works!
+```
+
 [more @ whatthecommmit.com](http://whatthecommit.com/)
 </section>
 
 <section>
 Good commit messages
 --------------------
-- Fix #113, software hangs when spacebar is pressed
-- Move images to separate folder
-- Separate test source from program source
+```
+Fix #113, software hangs when spacebar is pressed
+Move images to separate folder
+Separate test source from program source
+```
 </section>
 
 <section>
@@ -137,7 +142,69 @@ $ git commit
 $ git status
 ```
 
-We will get some practice when integrating Bootstrap
+Let's get some practice
+</section>
+
+<section>
+<section>
+Bootstrap
+---------
+The most popular front-end framework for developing responsive, mobile first projects on the web.
+</section>
+
+<section>
+Getting it
+----------
+```
+<link rel="stylesheet" href="bootstrap.min.css">
+```
+</section>
+
+<section>
+Using Bootstrap
+---------------
+- delete style tag
+- add the link to stylesheet
+
+```
+<link rel="stylesheet" href="bootstrap.min.css">
+```
+
+Check our code into Git
+</section>
+
+<section>
+Styling the nav bar
+-------------------
+- add class to `ul`
+- change `div.logo` to `h3.logo`
+- move h3.logo to below ul.nav
+
+``` html
+<ul class="nav nav-pills pull-right">
+```
+
+Check our code into Git
+</section>
+
+<section>
+Call to action
+--------------
+- make `div.jumbotron`
+- move project name and subtitle into `div.jumbotron`
+- add learn more button
+
+``` html
+<p>
+  <a class="btn btn-lg btn-success" href="#" role="button">
+    Sign up today
+  </a>
+</p>
+```
+
+Check our code into Git
+</section>
+
 </section>
 
 <section>
@@ -147,6 +214,8 @@ Collaborate
 $ git clone
 $ git push
 ```
+
+Let's head to [GitHub](http://www.github.com) and try
 </section>
 
 <section>
@@ -161,5 +230,6 @@ References
 [Try Git online](http://try.github.com)
 
 [Inner workings of Git](http://eagain.net/articles/git-for-computer-scientists/)
-</section>
 
+[Bootstrap](http://getbootstrap.com)
+</section>

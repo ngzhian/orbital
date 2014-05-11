@@ -118,22 +118,19 @@ Changes to be committed:
 </ul>
 <section>
 <h2 id="bad-commit-messages">Bad commit messages</h2>
-<ul>
-<li>Ooops!</li>
-<li>asdfasdfasdfasdfasdfasf</li>
-<li>It works! <a href="http://whatthecommit.com/">more @ whatthecommmit.com</a>
+<pre><code>Ooops!
+asdfasdfasdfasdfasdfasf
+It works!</code></pre>
+<a href="http://whatthecommit.com/">more @ whatthecommmit.com</a>
 </section>
-</li>
-</ul>
+
 <section>
 <h2 id="good-commit-messages">Good commit messages</h2>
-<ul>
-<li>Fix #113, software hangs when spacebar is pressed</li>
-<li>Move images to separate folder</li>
-<li>Separate test source from program source
+<pre><code>Fix #113, software hangs when spacebar is pressed
+Move images to separate folder
+Separate test source from program source</code></pre>
 </section>
-</li>
-</ul>
+
 <section>
 <h2 id="see-the-history">See the history</h2>
 <pre><code>$ git log
@@ -152,13 +149,63 @@ $ git add .
 $ git status
 $ git commit
 $ git status</code></pre>
-We will get some practice when integrating Bootstrap
+Let's get some practice
+</section>
+
+<section>
+<section>
+<h2 id="bootstrap">Bootstrap</h2>
+The most popular front-end framework for developing responsive, mobile first projects on the web.
+</section>
+
+<section>
+<h2 id="getting-it">Getting it</h2>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;bootstrap.min.css&quot;&gt;</code></pre>
+</section>
+
+<section>
+<h2 id="using-bootstrap">Using Bootstrap</h2>
+<ul>
+<li>delete style tag</li>
+<li>add the link to stylesheet</li>
+</ul>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;bootstrap.min.css&quot;&gt;</code></pre>
+Check our code into Git
+</section>
+
+<section>
+<h2 id="styling-the-nav-bar">Styling the nav bar</h2>
+<ul>
+<li>add class to <code>ul</code></li>
+<li>change <code>div.logo</code> to <code>h3.logo</code></li>
+<li>move h3.logo to below ul.nav</li>
+</ul>
+<pre class="html"><code>&lt;ul class=&quot;nav nav-pills pull-right&quot;&gt;</code></pre>
+Check our code into Git
+</section>
+
+<section>
+<h2 id="call-to-action">Call to action</h2>
+<ul>
+<li>make <code>div.jumbotron</code></li>
+<li>move project name and subtitle into <code>div.jumbotron</code></li>
+<li>add learn more button</li>
+</ul>
+<pre class="html"><code>&lt;p&gt;
+  &lt;a class=&quot;btn btn-lg btn-success&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;
+    Sign up today
+  &lt;/a&gt;
+&lt;/p&gt;</code></pre>
+Check our code into Git
+</section>
+
 </section>
 
 <section>
 <h2 id="collaborate">Collaborate</h2>
 <pre><code>$ git clone
 $ git push</code></pre>
+Let's head to <a href="http://www.github.com">GitHub</a> and try
 </section>
 
 <section>
@@ -167,9 +214,9 @@ $ git push</code></pre>
 <p><a href="http://git-scm.com/doc">Git Reference Manual</a></p>
 <p><a href="https://guides.github.com/activities/hello-world/">GitHub's Hello World Guide to GitHub</a></p>
 <p><a href="http://try.github.com">Try Git online</a></p>
-<a href="http://eagain.net/articles/git-for-computer-scientists/">Inner workings of Git</a>
+<p><a href="http://eagain.net/articles/git-for-computer-scientists/">Inner workings of Git</a></p>
+<a href="http://getbootstrap.com">Bootstrap</a>
 </section>
-
 
 
 
