@@ -56,44 +56,56 @@ Software to keep track of your files, originally for code
 <section>
 <h2 id="configuration">Configuration</h2>
 <p>Tell git who you are</p>
-<pre class="bash"><code>git config --global user.name &quot;your name&quot;
+<pre><code>git config --global user.name &quot;your name&quot;
 git config --global user.email &quot;your email&quot;</code></pre>
 <p>For Mac only</p>
-<pre class="bash"><code>git config --global core.editor &quot;open -t -W&quot;</code></pre>
+<pre><code>git config --global core.editor &quot;open -t -W&quot;</code></pre>
 </section>
 
 <section>
 <h2 id="initialize-git-repository">Initialize Git repository</h2>
-<pre class="bash"><code>git init</code></pre>
+<ul>
+<li>Windows: Fire up <code>Git Bash</code></li>
+<li>Mac/Linux: <code>Terminal</code></li>
+</ul>
+<pre><code>$ git init
+Initialized empty Git repository in ...</code></pre>
 </section>
 
 <section>
 <h2 id="checking-the-status">Checking the status</h2>
-<pre class="bash"><code>git status</code></pre>
+<pre><code>$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use &quot;git add&quot; to track)</code></pre>
 </section>
 
 <section>
 <h2 id="adding-files-to-be-tracked">Adding files to be tracked</h2>
-<pre class="bash"><code>git add .</code></pre>
+<pre><code>$ git add .
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+
+        new file:   asdf</code></pre>
 </section>
 
 <section>
 <h2 id="ignoring-files">Ignoring files</h2>
-<pre class="bash"><code>touch .gitignore</code></pre>
+<p>A file that tells <code>git</code> what files/globs to ignore</p>
+<pre><code>$ touch .gitignore</code></pre>
 </section>
 
 <section>
 <h2 id="commit-files">Commit files</h2>
-<pre class="bash"><code>git commit</code></pre>
-</section>
-
-<section>
-<h2 id="git-flow">Git flow</h2>
-<pre class="bash"><code>git status
-git add .
-git status
-git commit
-git status</code></pre>
+<pre><code>$ git commit
+# editor pops up</code></pre>
 </section>
 
 <section>
@@ -105,19 +117,48 @@ git status</code></pre>
 </li>
 </ul>
 <section>
+<h2 id="bad-commit-messages">Bad commit messages</h2>
+<ul>
+<li>Ooops!</li>
+<li>asdfasdfasdfasdfasdfasf</li>
+<li>It works! <a href="http://whatthecommit.com/">more @ whatthecommmit.com</a>
+</section>
+</li>
+</ul>
+<section>
+<h2 id="good-commit-messages">Good commit messages</h2>
+<ul>
+<li>Fix #113, software hangs when spacebar is pressed</li>
+<li>Move images to separate folder</li>
+<li>Separate test source from program source
+</section>
+</li>
+</ul>
+<section>
 <h2 id="see-the-history">See the history</h2>
-<pre class="bash"><code>git log</code></pre>
+<pre><code>$ git log
+$ git log --oneline</code></pre>
 </section>
 
 <section>
 <h2 id="see-the-differences">See the differences</h2>
-<pre class="bash"><code>git diff</code></pre>
+<pre><code>$ git diff HEAD^</code></pre>
+</section>
+
+<section>
+<h2 id="git-flow">Git flow</h2>
+<pre><code>$ git status
+$ git add .
+$ git status
+$ git commit
+$ git status</code></pre>
+We will get some practice when integrating Bootstrap
 </section>
 
 <section>
 <h2 id="collaborate">Collaborate</h2>
-<pre class="bash"><code>git clone
-git push</code></pre>
+<pre><code>$ git clone
+$ git push</code></pre>
 </section>
 
 <section>
