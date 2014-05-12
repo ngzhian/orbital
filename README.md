@@ -22,8 +22,8 @@ Vim, Haskell, Basketball
 
 
 <section>
-http://ngzhian.github.io/orbital-html-css-git
----------------------------------------------
+[http://ngzhian.github.io/orbital](http://ngzhian.github.io/orbital)
+--------------------------------------------------------------------
 </section>
 
 <section>
