@@ -4,29 +4,37 @@ CSS
 </section>
 
 <section>
+
+<section>
 What is CSS
 -----------
-Cascading Style Sheets
+**C**ascading **S**tyle **S**heets
 
-to make HTML look nicer, easier to digest
+the *beautiful* skin atop HTML
+</section>
+
+<section>
+[![Worst website](img/worst-website.png)](http://www.theworldsworstwebsiteever.com/);
+</section>
+
+<section>
+[![Worse](img/nice-website.jpg)](http://www.polygon.com)
+
+http://designm.ag/wp-content/inspiredology/2012/11/Polygon_main.jpg
+</section>
 </section>
 
 <section>
 CSS in the Wild
 ---------------
-tweak css values for a website using inspector
+tweak css values for a website using Inspector
 
-fire up inspector, or `C-S-c`, click on something, and see the sidebar
+fire up inspector, or <span class="key">Ctrl</span>+<span class="key">Shift</span>+<span class="key">C</span>, click on something, and see the sidebar
 </section>
 
 <section>
-Simple styles
--------------
-or how to bedazzle the audience
-</section>
-
-<section>
-### 3 ways of defining css
+3 ways of defining css
+----------------------
 1. inline
 2. `<style>` tag
 3. external stylesheet
@@ -41,7 +49,7 @@ most obvious style change
 </section>
 
 <section>
-###  we need a logo!
+### we need a logo!
 ``` html
 <div>IMPRESSIVE LOGO</div>
 ```
@@ -92,6 +100,7 @@ most obvious style change
 <section>
 Style tags and selectors
 ------------------------
+Styling individual elements is tedious
 </section>
 
 <section>
@@ -228,6 +237,15 @@ nav ul {
 </section>
 
 <section>
+### Webfonts
+[Google Web Fonts](http://www.google.com/fonts)
+``` html
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+font-family: 'PT Sans', sans-serif;
+```
+</section>
+
+<section>
 ### centering everything
 set a `width` for `.container` or a `max-width`
 ``` html
@@ -263,5 +281,7 @@ there's a lot more, such as `n-th child`, explore on your own
 References
 ----------
 [Detailed reference on all CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+[Google Web Fonts](http://www.google.com/fonts)
 </section>
 
