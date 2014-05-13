@@ -14,7 +14,7 @@ the *beautiful* skin atop HTML
 </section>
 
 <section>
-[![Worst website](img/worst-website.png)](http://www.theworldsworstwebsiteever.com/);
+[![Worst website](img/worst-website.png)](http://www.theworldsworstwebsiteever.com/)
 </section>
 
 <section>
