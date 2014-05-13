@@ -36,7 +36,7 @@ Inspiration
 
 [www.awwwards.com/winner-list/](http://www.awwwards.com/winner-list/)
 
-[wwwaleeforoughi.com](http://wwwaleeforoughi.com)
+[www.aleeforoughi.com](http://www.aleeforoughi.com)
 
 [wagerfield.github.io/parallax](http://wagerfield.github.io/parallax)
 
