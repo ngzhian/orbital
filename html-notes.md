@@ -10,19 +10,18 @@ What is HTML
 
 large part of what the web is
 
-you use your *browser*, which speaks *HTTP* to the *Servers*
+*you* use your *browser*, which speaks *HTTP* to the *Servers*
 on the *Internet* to see webpages
 </section>
 
 <section>
 HTML in the wild
 ----------------
-check the source of a webpage, maybe [NUS Computing](http://www.comp.nus.edu.sg)
+right click > `View Page Source`
+or <span class="key">Ctrl</span>+<span class="key">Shift</span>+<span class="key">I</span>
 
-on Firefox, right click on the web page and select `View Page Source`
-or `Ctrl-Shift-I`
-
-Use **inspect element** or `Ctrl-Shift-C` to select and jump to an element
+**Inspect element** or
+<span class="key">Ctrl</span>+<span class="key">Shift</span>+<span class="key">C</span> to select and jump to an element
 
 you can copy HTML from any website
 </section>
@@ -30,7 +29,7 @@ you can copy HTML from any website
 <section>
 Simplest html page
 ------------------
-make a super simple html page, `index.html` which doesn't have tags
+make a super simple html page, `index.html` which looks like a text file
 ``` html
 <!-- index.html -->
 Orbital wohoo!
@@ -43,9 +42,11 @@ display it anyway
 </section>
 
 <section>
+
+<section>
 HTML and tags
 -------------
-using Sublime Text, just type `html` and press `Tab` to see a barebones
+using Sublime Text, just type `html` and press <span class="key">Tab</span> to see a barebones
 HTML structure
 ``` html
 <!-- index.html -->
@@ -59,15 +60,47 @@ HTML structure
   </body>
 </html>
 ```
-
-- `<!DOCTYPE htmL>` requierd for legacy reasons to help browser in rendering
-- `<html>` tag defines that this is a html page
-- `<title>` title of webpage, shown in search results and browser tab
-- `<head>` not seen by users, mainly for computers, e.g. search engine crawlers
-- `<body>` what is seen by us, the user
 </section>
 
 <section>
+```html
+<!DOCTYPE html>
+```
+`<!DOCTYPE htmL>` requierd for legacy reasons to help browser in rendering
+</section>
+
+<section>
+```html
+<html>
+</html>
+```
+
+`<html>` tag defines that this is a html page
+</section>
+
+<section>
+```html
+<head>
+  <title>
+  </title>
+</head>
+```
+`<head>` not seen by users, mainly for computers, e.g. search engine crawlers
+
+`<title>` title of webpage, shown in [search results](http://google.com/search?q=html) and browser tab
+
+</section>
+
+<section>
+```html
+<body>
+</body>
+```
+`<body>` what is seen by us, the user
+</section>
+</section>
+
+<section data-background="img/project-bg.jpg">
 Our project page
 ----------------
 whatever project you end up doing, you will probably want to build a
@@ -221,7 +254,7 @@ jump there
 </section>
 
 <section>
-### a `form` with `input` and `submit` button
+### a `form` with `input` and `submit`
 ```html
   <div id="feedback">
     <form>
@@ -283,6 +316,7 @@ try pressing submit and see what happens
   </p>
 </form>
 ```
+`placeholder` as a *new* supported attribute
 </section>
 
 <section>
