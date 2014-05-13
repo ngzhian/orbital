@@ -5,23 +5,37 @@ Distributed version control system
 </section>
 
 <section>
+
+<section>
 Huh?
 ----
 Software to keep track of your files, originally for code
 </section>
 
 <section>
+### Turns this
+![Messy files](img/messy.png)
+</section>
+
+<section>
+### Into this!
+![Awesome structure](img/awesome.png)
+</section>
+
+</section>
+
+<section>
 Configuration
 -------------
 Tell git who you are
-```
-git config --global user.name "your name"
-git config --global user.email "your email"
+``` bash
+$ git config --global user.name "your name"
+$ git config --global user.email "your email"
 ```
 
 For Mac only
-```
-git config --global core.editor "open -t -W"
+``` bash
+$ git config --global core.editor "open -t -W"
 ```
 </section>
 
@@ -31,7 +45,7 @@ Initialize Git repository
 - Windows: Fire up `Git Bash`
 - Mac/Linux: `Terminal`
 
-```
+``` bash
 $ git init
 Initialized empty Git repository in ...
 ```
@@ -40,7 +54,7 @@ Initialized empty Git repository in ...
 <section>
 Checking the status
 -------------------
-```
+``` bash
 $ git status
 On branch master
 
@@ -53,7 +67,7 @@ nothing to commit (create/copy files and use "git add" to track)
 <section>
 Adding files to be tracked
 --------------------------
-```
+``` bash
 $ git add .
 $ git status
 On branch master
@@ -71,7 +85,7 @@ Changes to be committed:
 Ignoring files
 --------------
 A file that tells `git` what files/globs to ignore
-```
+``` bash
 $ touch .gitignore
 ```
 </section>
@@ -79,7 +93,7 @@ $ touch .gitignore
 <section>
 Commit files
 ------------
-```
+``` bash
 $ git commit
 # editor pops up
 ```
@@ -117,7 +131,7 @@ Separate test source from program source
 <section>
 See the history
 ---------------
-```
+``` bash
 $ git log
 $ git log --oneline
 ```
@@ -126,7 +140,7 @@ $ git log --oneline
 <section>
 See the differences
 -------------------
-```
+``` bash
 $ git diff HEAD^
 ```
 </section>
@@ -134,7 +148,7 @@ $ git diff HEAD^
 <section>
 Git flow
 --------
-```
+``` bash
 $ git status
 $ git add .
 $ git status
@@ -147,16 +161,17 @@ Let's get some practice
 
 <section>
 <section>
-Bootstrap
----------
+[Bootstrap](http://getbootstrap.com/)
+-------------------------------------
 The most popular front-end framework for developing responsive, mobile first projects on the web.
 </section>
 
 <section>
 Getting it
 ----------
-```
-<link rel="stylesheet" href="bootstrap.min.css">
+[Instructions](http://getbootstrap.com/getting-started/)
+``` html
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 ```
 </section>
 
@@ -166,7 +181,7 @@ Using Bootstrap
 - delete style tag
 - add the link to stylesheet
 
-```
+``` html
 <link rel="stylesheet" href="bootstrap.min.css">
 ```
 
@@ -210,8 +225,9 @@ Check our code into Git
 <section>
 Collaborate
 -----------
-```
+``` bash
 $ git clone
+$ git pull
 $ git push
 ```
 

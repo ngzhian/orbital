@@ -64,17 +64,31 @@ Distributed version control system
 </section>
 
 <section>
+
+<section>
 <h2 id="huh">Huh?</h2>
 Software to keep track of your files, originally for code
 </section>
 
 <section>
+<h3 id="turns-this">Turns this</h3>
+<img src="img/messy.png" alt="Messy files" />
+</section>
+
+<section>
+<h3 id="into-this">Into this!</h3>
+<img src="img/awesome.png" alt="Awesome structure" />
+</section>
+
+</section>
+
+<section>
 <h2 id="configuration">Configuration</h2>
 <p>Tell git who you are</p>
-<pre><code>git config --global user.name &quot;your name&quot;
-git config --global user.email &quot;your email&quot;</code></pre>
+<pre class="bash"><code>$ git config --global user.name &quot;your name&quot;
+$ git config --global user.email &quot;your email&quot;</code></pre>
 <p>For Mac only</p>
-<pre><code>git config --global core.editor &quot;open -t -W&quot;</code></pre>
+<pre class="bash"><code>$ git config --global core.editor &quot;open -t -W&quot;</code></pre>
 </section>
 
 <section>
@@ -83,13 +97,13 @@ git config --global user.email &quot;your email&quot;</code></pre>
 <li>Windows: Fire up <code>Git Bash</code></li>
 <li>Mac/Linux: <code>Terminal</code></li>
 </ul>
-<pre><code>$ git init
+<pre class="bash"><code>$ git init
 Initialized empty Git repository in ...</code></pre>
 </section>
 
 <section>
 <h2 id="checking-the-status">Checking the status</h2>
-<pre><code>$ git status
+<pre class="bash"><code>$ git status
 On branch master
 
 Initial commit
@@ -99,7 +113,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)</code
 
 <section>
 <h2 id="adding-files-to-be-tracked">Adding files to be tracked</h2>
-<pre><code>$ git add .
+<pre class="bash"><code>$ git add .
 $ git status
 On branch master
 
@@ -114,12 +128,12 @@ Changes to be committed:
 <section>
 <h2 id="ignoring-files">Ignoring files</h2>
 <p>A file that tells <code>git</code> what files/globs to ignore</p>
-<pre><code>$ touch .gitignore</code></pre>
+<pre class="bash"><code>$ touch .gitignore</code></pre>
 </section>
 
 <section>
 <h2 id="commit-files">Commit files</h2>
-<pre><code>$ git commit
+<pre class="bash"><code>$ git commit
 # editor pops up</code></pre>
 </section>
 
@@ -148,18 +162,18 @@ Separate test source from program source</code></pre>
 
 <section>
 <h2 id="see-the-history">See the history</h2>
-<pre><code>$ git log
+<pre class="bash"><code>$ git log
 $ git log --oneline</code></pre>
 </section>
 
 <section>
 <h2 id="see-the-differences">See the differences</h2>
-<pre><code>$ git diff HEAD^</code></pre>
+<pre class="bash"><code>$ git diff HEAD^</code></pre>
 </section>
 
 <section>
 <h2 id="git-flow">Git flow</h2>
-<pre><code>$ git status
+<pre class="bash"><code>$ git status
 $ git add .
 $ git status
 $ git commit
@@ -169,13 +183,14 @@ Let's get some practice
 
 <section>
 <section>
-<h2 id="bootstrap">Bootstrap</h2>
+<h2 id="bootstrap"><a href="http://getbootstrap.com/">Bootstrap</a></h2>
 The most popular front-end framework for developing responsive, mobile first projects on the web.
 </section>
 
 <section>
 <h2 id="getting-it">Getting it</h2>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;bootstrap.min.css&quot;&gt;</code></pre>
+<p><a href="http://getbootstrap.com/getting-started/">Instructions</a></p>
+<pre class="html"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css&quot;&gt;</code></pre>
 </section>
 
 <section>
@@ -184,7 +199,7 @@ The most popular front-end framework for developing responsive, mobile first pro
 <li>delete style tag</li>
 <li>add the link to stylesheet</li>
 </ul>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;bootstrap.min.css&quot;&gt;</code></pre>
+<pre class="html"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;bootstrap.min.css&quot;&gt;</code></pre>
 Check our code into Git
 </section>
 
@@ -218,7 +233,7 @@ Check our code into Git
 
 <section>
 <h2 id="collaborate">Collaborate</h2>
-<pre><code>$ git clone
+<pre class="bash"><code>$ git clone
 $ git push</code></pre>
 Let's head to <a href="http://www.github.com">GitHub</a> and try
 </section>
